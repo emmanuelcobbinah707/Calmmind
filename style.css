@@ -1,0 +1,222 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    color: #000;
+}
+
+.container {
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header And ShowCase */
+#section1 {
+    background-color: #fbbba3;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#header {
+    margin-top: 30px;
+}
+
+#logo {
+    width: 30px;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+}
+
+#nav {
+    display: inline-block;
+    font-weight: 400;
+    float: right;
+    margin-top: 10px;
+}
+
+#nav li {
+    display: inline;
+    float: left;
+    margin: 0 15px;
+    padding: 5px 15px;
+    font-size: 18px;
+    list-style: none;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#anime1:hover, #anime2:hover {
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+#relax {
+    margin-right: 40px;
+}
+
+#relax:hover {
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+
+#freeTrial {
+    background-color: #110ACD;
+    border-radius: 5px;
+}
+
+#freeTrial:hover {
+    padding: 7.5px 22px;
+    transition: 0.5s;
+}
+
+#freeTrial a {
+    color: #fff;
+}
+
+/* Showcase */
+#showcaseText {
+    width: 32%;
+    float: left;
+    margin-top: 125px;
+    text-align: right;
+}
+
+#showcaseText p {
+    font-size: 42px;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+#showcaseLinks {
+    float: right;
+}
+
+#showcaseLinks li {
+    float: left;
+    display: inline;
+    list-style: none;
+}
+
+#apple {
+    margin-top: 9px;
+}
+
+/* Showcase Image */
+#showcaseImage {
+    background: url('images/clean-ipad-screen-mockup-desktop.png');
+    width: 727px;
+    height: 550px;
+    float: right;
+}
+
+/* Section2 */
+#section2 {
+    float: left;
+    background-color: #fff;
+    margin-top: 100px;
+}
+
+#phoneImg {
+    background: url(images/iphone-x-mockup-desktop.png);
+    position: absolute;
+    margin-left: 10px;
+    height: 789px;
+    width: 886px;
+    float: left;
+}
+
+article {
+    width: 40%;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 690px;
+}
+
+article h1 {
+    font-style: normal;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+article p {
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+article button {
+    background-color: #110ACD;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 75%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+article button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+/* Section3 */
+#section3 {
+    margin-top: 1050px;
+    text-align: center;
+}
+
+#review {
+    margin-bottom: 200px;
+}
+
+#review h1{
+    font-size: 42px;
+}
+
+#review p{
+    font-size: 22px;
+    display: inline-block;
+}
+
+#img1 {
+    float: left;
+    display: inline-block;
+}
+
+#img2 {
+    float: right;
+    display: inline-block;
+}
+
+#img1:hover, #img2:hover {
+    cursor: pointer;
+    width: 2.5%;
+    height: auto;
+    transition: 0.5s;
+}
+
+/* Final Banner */
+#container2 {
+    margin-bottom: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #fbbba3;
+    width: 100%;
+    height: 200px;
+}
