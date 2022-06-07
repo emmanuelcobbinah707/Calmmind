@@ -1,12 +1,13 @@
 /* General */
 * {
+    width: auto;
     margin: 0;
     padding: 0;
-    font-size: 15px;
     font-family: 'Roboto', sans-serif;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6em;
     color: #000;
+    max-width: 100%;
+    overflow-x: hidden; 
 }
 
 .container {
@@ -18,7 +19,7 @@
 
 /* Header And ShowCase */
 #section1 {
-    background-color: #fbbba3;
+    background-color: #FFBAA1;
     width: 100%;
     min-height: 100vh;
 }
@@ -37,6 +38,7 @@
 #nav {
     display: inline-block;
     font-weight: 400;
+    font-size: 18px;
     float: right;
     margin-top: 10px;
 }
@@ -56,7 +58,7 @@
 }
 
 #anime1:hover, #anime2:hover {
-    font-size: 25px;
+    font-size: 20px;
     transition: 0.5s;
 }
 
@@ -65,7 +67,7 @@
 }
 
 #relax:hover {
-    font-size: 25px;
+    font-size: 20px;
     transition: 0.5s;
 }
 
@@ -86,9 +88,9 @@
 
 /* Showcase */
 #showcaseText {
-    width: 32%;
+    width: 45%;
     float: left;
-    margin-top: 125px;
+    margin-top: 100px;
     text-align: right;
 }
 
@@ -114,33 +116,34 @@
 
 /* Showcase Image */
 #showcaseImage {
-    background: url('images/clean-ipad-screen-mockup-desktop.png');
-    width: 727px;
-    height: 550px;
-    float: right;
+    width: 55%;
+    height: auto;
+    top: 80px;
+    display: inline;
+    float: left;
+    margin: auto;
 }
 
 /* Section2 */
 #section2 {
-    float: left;
     background-color: #fff;
-    margin-top: 100px;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
 }
 
-#phoneImg {
-    background: url(images/iphone-x-mockup-desktop.png);
-    position: absolute;
-    margin-left: 10px;
-    height: 789px;
-    width: 886px;
+#phoneImage {
     float: left;
+    margin: auto;
+    width: 60%;
 }
 
 article {
+    margin: auto;
+    float: right;
+    display: inline;
     width: 40%;
-    position: absolute;
-    margin-top: 120px;
-    margin-left: 690px;
 }
 
 article h1 {
@@ -160,7 +163,7 @@ article button {
     color: #fff;
     font-size: 20px;
     border-radius: 5px;
-    width: 75%;
+    width: 100%;
     margin-top: 20px;
     padding: 10px;
 }
@@ -175,7 +178,7 @@ article button:hover {
 
 /* Section3 */
 #section3 {
-    margin-top: 1050px;
+    margin-top: 200px;
     text-align: center;
 }
 
@@ -211,7 +214,9 @@ article button:hover {
 
 /* Final Banner */
 #container2 {
-    margin-bottom: 50px;
+    width: fit-content;
+    height: auto;
+    margin: auto;
 }
 
 /* Footer */
@@ -219,4 +224,29 @@ footer {
     background-color: #fbbba3;
     width: 100%;
     height: 200px;
+}
+
+@media (max-width:1147px) {
+    
+    #showcaseText p {
+        font-size: 35px;
+    }
+    
+    article h1 {
+        font-size: 35px;
+    }
+    
+    article p {
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:813px) {
+
+    #nav li {
+        margin: 0 10px;
+        padding: 5px 10px;
+    }
+   
 }
