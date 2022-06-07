@@ -94,7 +94,7 @@
     text-align: right;
 }
 
-#showcaseText p {
+#showcaseText h1 {
     font-size: 42px;
     line-height: 1.5em;
     font-weight: 400;
@@ -136,7 +136,7 @@
 #phoneImage {
     float: left;
     margin: auto;
-    width: 60%;
+    width: 50%;
 }
 
 article {
@@ -227,11 +227,15 @@ footer {
 }
 
 @media (max-width:1147px) {
-    
-    #showcaseText p {
+     
+    #showcaseText h1 {
         font-size: 35px;
     }
-    
+
+    /* article {
+        width: 50%;
+    }
+     */
     article h1 {
         font-size: 35px;
     }
