@@ -28,6 +28,10 @@
     margin-top: 30px;
 }
 
+#lo1 {
+    display: none;
+}
+
 #logo {
     width: 30px;
     height: auto;
@@ -57,13 +61,13 @@
     font-weight: normal;
 }
 
-#anime1:hover, #anime2:hover {
-    font-size: 20px;
-    transition: 0.5s;
-}
-
 #relax {
     margin-right: 40px;
+}
+
+#freeTrial {
+    background-color: #110ACD;
+    border-radius: 5px;
 }
 
 #relax:hover {
@@ -71,10 +75,9 @@
     transition: 0.5s;
 }
 
-
-#freeTrial {
-    background-color: #110ACD;
-    border-radius: 5px;
+#anime1:hover, #anime2:hover {
+    font-size: 20px;
+    transition: 0.5s;
 }
 
 #freeTrial:hover {
@@ -87,6 +90,10 @@
 }
 
 /* Showcase */
+#showcase {
+    margin-top: 20px;
+}
+
 #showcaseText {
     width: 45%;
     float: left;
@@ -115,13 +122,17 @@
 }
 
 /* Showcase Image */
-#showcaseImage {
+#showcaseImage1 {
+    display: none;
+}
+
+#showcaseImage2 {
     width: 55%;
     height: auto;
     top: 80px;
     display: inline;
     float: left;
-    margin: auto;
+    margin: 20px auto;
 }
 
 /* Section2 */
@@ -133,10 +144,18 @@
     justify-content: center;
 }
 
-#phoneImage {
+#phoneImg1 {
     float: left;
     margin: auto;
     width: 50%;
+}
+
+#phoneImg2 {
+    display: none;
+}
+
+#phoneImg3 {
+    display: none;
 }
 
 article {
@@ -212,11 +231,12 @@ article button:hover {
     transition: 0.5s;
 }
 
-/* Final Banner */
-#container2 {
-    width: fit-content;
-    height: auto;
-    margin: auto;
+#peeps2 {
+    display: none;
+}
+
+#peeps3 {
+    display: none;
 }
 
 /* Footer */
@@ -232,10 +252,6 @@ footer {
         font-size: 35px;
     }
 
-    /* article {
-        width: 50%;
-    }
-     */
     article h1 {
         font-size: 35px;
     }
@@ -248,9 +264,170 @@ footer {
 
 @media(max-width:813px) {
 
+    .container {
+        width: 90%;
+    }
+
     #nav li {
         margin: 0 10px;
         padding: 5px 10px;
     }
+
+    #showcase {
+        margin-top: 30px;
+    }
    
+    #showcaseText h1 {
+        line-height: 1.5em;
+        font-weight: 400;
+    }
+
+    #showcaseImage {
+        margin: 40px auto;
+    }
+
+    #phoneImg1 {
+        display: none;
+    }
+
+    #phoneImg2 {
+        display: block;
+        float: left;
+        margin: auto;
+        width: 50%;
+    }
+
+    article h1 {
+        font-size: 30px;
+    }
+
+    #peeps1 {
+        display: none;
+    }
+
+    #peeps2 {
+        display: block;
+    }
+
+}
+
+@media (max-width:705px) {
+
+    .container {
+        width: 80%;
+    }
+
+    #lo1 {
+        display: block;
+        margin-left: 50%;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #relax:hover {
+        font-size: 18px
+    }
+    
+    #anime1:hover, #anime2:hover {
+        font-size: 18px
+    }
+    
+    #freeTrial:hover {
+        padding: none;
+        font-size: 18px;
+    }
+
+    #showcase {
+        margin-bottom: 300px;
+    }
+
+    #showcaseImage1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #showcaseImage2 {
+        display: none;
+    }
+
+    #showcaseText {
+        text-align: center;
+        width: 100%;
+    }
+
+    #showcaseLinks { 
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    #phoneImg3 {
+        display: block;
+        float: none;
+        margin-top: -325px;
+        margin-left: 50%;
+        width: 100%;
+        position: absolute;
+    }
+
+    #phoneImg2 {
+        display: none;
+    }
+
+    article {
+        position: relative;
+        text-align: left;
+        margin: auto;
+        margin-top: 200px;
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    article h1 {
+        font-size: 35px;
+        margin-bottom: 50px;
+        font-weight: 500;
+    }
+
+    article p {
+        font-style: Roboto;
+        font-size: 20px;
+        line-height: 1.6em;
+    }
+
+    #review h1 {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    #review p {
+        margin-top: 45px;
+        font-size: 22px;
+        width: 70%;
+    }
+
+    #img1, #img2{
+        margin-top: 100px;
+    }
+
+    #peeps2 {
+        display: none;
+    }
+
+    #peeps3 {
+        display: block;
+        justify-content: baseline;
+    }
+    
+}
+
+@media (max-width:592px) {
+
+
+    #freeTrial {
+        display: none
+    }
 }
