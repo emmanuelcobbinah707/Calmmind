@@ -40,12 +40,17 @@
 }
 
 #nav {
-    display: inline-block;
+    display: flex;
     font-weight: 400;
     font-size: 18px;
     float: right;
     margin-top: 10px;
 }
+
+/* #nav ul {
+    display: flex;
+    justify-content: center;
+} */
 
 #nav li {
     float: left;
@@ -69,8 +74,17 @@
     border-radius: 5px;
 }
 
-#open {
+#freeTrial2 {
     display: none;
+    background-color: #110ACD;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+#freeTrial a, #freeTrial2 a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
 }
 
 #relax:hover {
@@ -329,6 +343,11 @@ footer {
         width: 80%;
     }
 
+    #nav {
+        display: flex;
+        justify-content: center;
+    }
+
     #lo1 {
         display: block;
         margin-left: 50%;
@@ -439,54 +458,16 @@ footer {
 
 @media (max-width:592px) {
 
-    #open {
-        display: block;
-    }
-
-    #nav {
-        position: fixed;
-        background-color: #fff;
-        height: 100%;
-        width: 60%;
-        margin-left: 200px; 
-        margin-top: -97px;
-        text-align: center;
-    }
-
-     #nav ul {
-        margin-top: 60px;
-        font-size: 18px;
-        list-style: none;
-    }
-
-    #nav ul li{
-        display: block;
-        float: none;
-        margin: 30px -5%;
-        width: 100%;
-    }
-    
     #freeTrial {
-        background-color: #fff;
+        display: none;
     }
 
-    #freeTrial a {
-        color: #000;
+    #freeTrial2 {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin-top: 60px;
+        margin-left: 15%;
     }
-    
-    #relax:hover {
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    
-    #anime1:hover, #anime2:hover {
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    
-    #freeTrial:hover {
-        font-size: 20px;
-        transition: 0.5s;
-    }
-   
+
 }
