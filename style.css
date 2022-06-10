@@ -48,7 +48,6 @@
 }
 
 #nav li {
-    display: inline;
     float: left;
     margin: 0 15px;
     padding: 5px 15px;
@@ -70,15 +69,9 @@
     border-radius: 5px;
 }
 
-/* #freeTrial2 {
+#open {
     display: none;
-    background-color: #110ACD;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 5px 15px;
-    font-size: 18px;
-} */
+}
 
 #relax:hover {
     font-size: 20px;
@@ -345,6 +338,7 @@ footer {
         display: none;
     }
 
+ 
     #relax:hover {
         font-size: 18px
     }
@@ -444,7 +438,55 @@ footer {
 }
 
 @media (max-width:592px) {
-    #freeTrial {
-        margin-left: 200px;
+
+    #open {
+        display: block;
     }
+
+    #nav {
+        position: fixed;
+        background-color: #fff;
+        height: 100%;
+        width: 60%;
+        margin-left: 200px; 
+        margin-top: -97px;
+        text-align: center;
+    }
+
+     #nav ul {
+        margin-top: 60px;
+        font-size: 18px;
+        list-style: none;
+    }
+
+    #nav ul li{
+        display: block;
+        float: none;
+        margin: 30px -5%;
+        width: 100%;
+    }
+    
+    #freeTrial {
+        background-color: #fff;
+    }
+
+    #freeTrial a {
+        color: #000;
+    }
+    
+    #relax:hover {
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    
+    #anime1:hover, #anime2:hover {
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    
+    #freeTrial:hover {
+        font-size: 20px;
+        transition: 0.5s;
+    }
+   
 }
